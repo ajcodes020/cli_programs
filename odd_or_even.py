@@ -8,9 +8,11 @@ print(r"""
 """)
 
 print("This program will check if a given integer number is odd or even.")
+
+# Asks user for an integer number.
 number = int(input("Enter a number: "))
 
-if number % 2 == 0:
-    print(f"{number} is an even number.")
-else:
-    print(f"{number} is an odd number.")
+# Checks if the given number is odd or even, then store to output variable.
+output = f"{number} is an even number." if number % 2 == 0 else f"{number} is an odd number."
+
+print(output) # Prints output
