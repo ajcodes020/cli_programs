@@ -15,18 +15,18 @@ print("This program will check if the year provided is a leap year or not.")
 # Asks user for a year.
 year = int(input("What year do you want to check? "))
 
-# Checks if the given year is divisible by 4 or not.
-if year % 4 == 0:
 
-    # If the year is divisible by 400, it is a leap year (e.g., 2000).
-    # If the year is divisible by 100 but not by 400, it is not a leap year (e.g., 1700).
-    if year % 400 == 0:
-        print(f"Year {year} is a leap year")
-    elif year % 100 == 0:
-        print(f"Year {year} is not a leap year")
+def is_leap(year):
+    """ returns True if year is a leap year, otherwise False """
+    if year % 4 == 0:
+        if year % 400 == 0:
+            return True
+        elif year % 100 == 0:
+            return False
+        else:
+            return True
     else:
-        print(f"Year {year} is a leap year")
+        return False
 
-# If the year is not divisible by 4 without a remainder, then it is not a leap year.
-else:
-    print(f"Year {year} is not a leap year")
+
+print(f"{year} is a leap year.") if is_leap(year) else print(f"{year} is not a leap year.")
