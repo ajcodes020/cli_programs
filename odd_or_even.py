@@ -10,9 +10,12 @@ print(r"""
 print("This program will check if a given integer number is odd or even.")
 
 # Asks user for an integer number.
-number = int(input("Enter a number: "))
+number = int(input("Enter an integer number: "))
 
-# Checks if the given number is odd or even, then store to output variable.
-output = f"{number} is an even number." if number % 2 == 0 else f"{number} is an odd number."
 
-print(output) # Prints output
+def is_even(n):
+    """ return True if given integer number is even, otherwise False """
+    return True if n % 2 == 0 else False
+
+
+print(f"{number} is an even number.") if is_even(number) else print(f"{number} is an odd number.")
