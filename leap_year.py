@@ -17,7 +17,7 @@ year = int(input("What year do you want to check? "))
 
 
 def is_leap(year):
-    """ returns True if year is a leap year, otherwise False """
+    """ return True if year is a leap year, otherwise False """
     if year % 4 == 0:
         if year % 400 == 0:
             return True
