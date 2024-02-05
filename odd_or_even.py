@@ -14,7 +14,7 @@ number = int(input("Enter an integer number: "))
 
 
 def is_even(n):
-    """ Returns True if given integer number is even, otherwise False """
+    """ Returns True if given integer number is even, else False """
     return True if n % 2 == 0 else False
 
 
