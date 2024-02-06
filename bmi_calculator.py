@@ -1,4 +1,13 @@
-# BMI Categories from wikipedia
+print(r"""
+  ____  __  __ _____    _____      _            _       _             
+ |  _ \|  \/  |_   _|  / ____|    | |          | |     | |            
+ | |_) | \  / | | |   | |     __ _| | ___ _   _| | __ _| |_ ___  _ __ 
+ |  _ <| |\/| | | |   | |    / _` | |/ __| | | | |/ _` | __/ _ \| '__|
+ | |_) | |  | |_| |_  | |___| (_| | | (__| |_| | | (_| | || (_) | |   
+ |____/|_|  |_|_____|  \_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   
+                                                                      
+""")
+# BMI Categories from wikipedia: https://en.wikipedia.org/wiki/Body_mass_index
 print("BMI Categories: ")
 print("Underweight (Severe thinness) < 16")
 print("Underweight (Moderate thinness) = 16 - 16.9")
@@ -8,6 +17,7 @@ print("Overweight (Pre-obese) = 25 - 29.9")
 print("Obese (Class I) = 30 - 34.9")
 print("Obese (Class II) = 35 - 39.9")
 print("Obese (Class III) = 40 or greater\n")
+
 
 height = float(input("Enter your height in meters: "))
 weight = float(input("Enter your weight in kilograms: "))
