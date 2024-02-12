@@ -17,18 +17,22 @@ calculator_logo = r"""
 
 
 def add(n1, n2):
+    """ Returns the sum of n1, n2 """
     return n1 + n2
 
 
 def subtract(n1, n2):
+    """ Returns the difference of n1, n2 """
     return n1 - n2
 
 
 def multiply(n1, n2):
+    """ Returns the product of n1, n2 """
     return n1 * n2
 
 
 def divide(n1, n2):
+    """ Returns the quotient of n1, n2 """
     return n1 / n2
 
 
