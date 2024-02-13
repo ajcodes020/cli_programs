@@ -9,6 +9,7 @@ cipher_logo = r"""
 
 
 def caesar(process, message, count):
+    """ encode/decode message by shifting using count """
     hidden_message = ""
     for letter in message:
         if letter not in alphabet:
