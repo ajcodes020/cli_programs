@@ -45,6 +45,7 @@ operations_dict = {
 
 
 def calculator():
+    """ Starts the calculator program """
     print(calculator_logo)
     num1 = float(input("Enter a number: "))
     proceed = True
