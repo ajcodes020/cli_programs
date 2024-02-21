@@ -1,13 +1,3 @@
-cipher_logo = r"""
- ____  ____  _____ ____  ____  ____    ____  _  ____  _     _____ ____ 
-/   _\/  _ \/  __// ___\/  _ \/  __\  /   _\/ \/  __\/ \ /|/  __//  __\
-|  /  | / \||  \  |    \| / \||  \/|  |  /  | ||  \/|| |_|||  \  |  \/|
-|  \__| |-|||  /_ \___ || |-|||    /  |  \__| ||  __/| | |||  /_ |    /
-\____/\_/ \|\____\\____/\_/ \|\_/\_\  \____/\_/\_/   \_/ \|\____\\_/\_\
-                                                                       
-"""
-
-
 def caesar(process, message, count):
     """ encode/decode message by shifting using count """
     hidden_message = ""
@@ -24,7 +14,6 @@ def caesar(process, message, count):
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 proceed = True
-print(cipher_logo)
 while proceed:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt: ")
     text = input("Type your message: ").lower()
