@@ -1,18 +1,6 @@
 import random
 import os
 
-cards_art = r"""
-                                  _____        
-                          _____  |K  WW|       
-                  _____  |Q  ww| | /\{)|       
-           _____ |J  ww| | /\{(| | \/%%| _____
-          |10 o || /\{)| | \/%%| |  %%%||A ^  |
-          |o o o|| \/% | |  %%%| |_%%%>|| / \ |
-          |o o o||   % | |_%%%O|        | \ / |
-          |o o o||__%%[|                |  .  |
-          |___0I|                       |____V|
-"""
-
 
 def evaluate(cards):
     """ Returns total value of cards """
@@ -28,7 +16,6 @@ def evaluate(cards):
 
 def blackjack():
     """ Starts/reset blackjack game"""
-    print(cards_art)
     single_deck = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10] * 4
     random.shuffle(single_deck)
     player_cards = []
