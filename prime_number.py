@@ -1,11 +1,16 @@
-def prime_checker(number):
-    for i in range(2, number):
+print("This program will check if a given integer number is a prime number.")
+
+# Asks user for an integer number.
+number = int(input("Enter an integer number: "))
+
+
+def prime_checker(n):
+    """ Returns True if given integer number is a prime number, else False """
+    for i in range(2, n):
         if number % i == 0:
-            print("It's not a prime number.")
-            break
+            return False
     else:
-        print("It's a prime number.")
+        return True
 
 
-n = int(input()) # Check this number
-prime_checker(number=n)
+print(f"{number} is a prime number.") if prime_checker(number) else print(f"{number} is not a prime number.")
